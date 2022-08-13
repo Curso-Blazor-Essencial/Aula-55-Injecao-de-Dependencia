@@ -1,0 +1,17 @@
+﻿@page "/"
+@inject ServicoSingleton singleton
+@inject ServicoScoped scoped
+@inject ServicoTransient transient
+
+<PageTitle>Index</PageTitle>
+
+<p> Singleton Count: @singleton.Valor</p>
+<p> Scoped Count: @scoped.Valor</p>
+<p> Transient Count: @transient.Valor</p>
+
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
